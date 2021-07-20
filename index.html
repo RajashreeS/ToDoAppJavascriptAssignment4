@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="stylenew.css">
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="main-container" id="blur">
+               <div class="heading-container">
+                   <h1 class="heading-bold">Tasks<span class="heading-thin"> Lists</span></h1>
+                   <p class="add-list-button" onclick="toggle()"><i class="fa fa-plus-circle" >&nbsp;</i><span>Add List</span></p>
+                </div>
+                <p id="no-item-text">No Items in the todo list</p>
+                <div class="card-item-container"></div>
+        </div>
+        <div class="card-main-container" id="blur2">
+            
+        </div>   
+        <div class="popup-overlay">
+            <div class="popup-content" id="pop">
+                <div>
+                    <p class="popup-box-text">Add New List</p>
+                </div>
+                <div>
+                    <input type="text" id="listHeading" placeholder="Add new list name" name="list-item-name">
+                </div>
+                <div>
+                    <button onclick="addListItem()" class="add-list" id="Add-list-item">Add</button><button onclick="toggle()" class="close">close</button>
+                </div>
+            </div>
+            <div class="popup-content" id="popAddItem">
+                <div>
+                    <p class="popup-box-text">Add New Item</p>
+                </div>
+                <div>
+                    <input type="text" id='subListHeading' placeholder="Add New Item">
+                </div>
+                <div>
+                    <button onclick="addSubTodo()">Add</button><button onclick="toggleAddItem()">Close</button>
+                </div>
+            </div>
+           
+       </div>
+       
+        
+
+     <script src="index.js" type="text/javascript"></script>
+        
+    </body>
+</html>
